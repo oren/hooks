@@ -1,0 +1,3 @@
+#!/bin/sh
+
+docker-compose run server sh -c "cd server && npm install"

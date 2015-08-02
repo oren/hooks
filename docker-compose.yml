@@ -1,0 +1,16 @@
+nginx:
+  build: nginx
+  links:
+    - server
+  ports:
+    - "80:80"
+    - "443:443"
+  restart: always
+
+server:
+  build: server
+  ports:
+    - "3000:3000"
+  # volumes:
+  #  - .:/src
+  command: "node ./server.js"
