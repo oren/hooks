@@ -14,4 +14,4 @@ server:
     - "3000:3000"
   # volumes:
   #  - .:/src
-  command: "node server/server.js"
+  command: "node /src/server.js"
