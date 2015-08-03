@@ -4,8 +4,10 @@ RUN mkdir -p /tmp/nginx/client-body
 
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY default.conf /etc/nginx/conf.d/default.conf
+COPY run /tmp/run
 
 COPY ssl/nginx.crt /etc/nginx/ssl/nginx.crt
 COPY ssl/nginx.key /etc/nginx/ssl/nginx.key
 
-CMD ["nginx", "-g", "daemon off;"]
+# CMD ["nginx", "-g", "daemon off;"]
+CMD ["/tmp/run"]

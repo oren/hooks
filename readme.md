@@ -8,8 +8,8 @@ Web service that recieves github web hooks
 
 ## Run
 
-    bin/build
-    bin/run
+    docker-compose build
+    docker-compose up
 
 ## Test
 

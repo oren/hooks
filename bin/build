@@ -1,6 +1,0 @@
-#!/bin/sh
-
-cd nginx
-./replace-vars
-cd ..
-docker-compose build
