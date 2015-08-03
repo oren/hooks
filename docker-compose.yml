@@ -5,8 +5,8 @@ nginx:
   ports:
     - "80:80"
     - "443:443"
-  environment:
-    NODE_HOST: laptop-hooks.my-server.com
+  # environment:
+  #   NODE_HOST: laptop-hooks.my-server.com
 
 server:
   build: server
