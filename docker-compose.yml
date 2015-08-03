@@ -7,7 +7,6 @@ nginx:
     - "443:443"
   environment:
     NODE_HOST: laptop-hooks.my-server.com
-  restart: always
 
 server:
   build: server
@@ -15,4 +14,4 @@ server:
     - "3000:3000"
   # volumes:
   #  - .:/src
-  command: "node ./server.js"
+  command: "node server/server.js"
